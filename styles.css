@@ -1,28 +1,125 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-}
-
-.container {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    display: flex;
+    position: relative;
     overflow: hidden;
 }
 
-.login-box {
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.circle1, .circle2, .circle3, .circle4 {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.circle1 {
+    width: 350px;
+    height: 350px;
+    background: rgb(255, 230, 0);
+    top: 430px;
+    left: 390px;
+}
+
+.circle2 {
+    width: 400px;
+    height: 400px;
+    background: rgb(255, 0, 140);
+    bottom: 250px;
+    right: 250px;
+}
+
+.circle3 {
+    width: 250px;
+    height: 250px;
+    background: rgb(119, 0, 255);
+    top: 160px;
+    left: 54%;
+    transform: translateX(-50%);
+}
+
+.circle4 {
+    width: 150px;
+    height: 150px;
+    background: rgba(0, 225, 255, 0.9);
+    top: 58%;
+    left: 890px;
+}
+
+.container {
     display: flex;
-    width: 800px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 1;
 }
 
 .left, .right {
-    padding: 40px;
-    width: 50%;
+    padding: 20px;
+    width: 300px;
 }
 
+.left {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #555;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}

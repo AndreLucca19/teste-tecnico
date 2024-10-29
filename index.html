@@ -3,41 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Login</title>
+    <title>Login e Cadastro</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="background">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+    </div>
     <div class="container">
-        <div class="login-box">
-            <div class="left">
-                <h2>BEM VINDO</h2>
-                <h3>NOVO LOGIN</h3>
-                <button class="create-account">CRIAR CONTA</button>
-                <div class="social-icons">
-                    <img src="./images/gmail.png" alt="Gmail">
-                    <img src="./images/whats.png" alt="WhatsApp">
-                    <img src="./images/telegras.png" alt="Telegram">
-                </div>
+        <div class="left">
+            <h2>BEM VINDO</h2>
+            <p>ㅤ</p>
+            <p>ㅤ</p>
+            <p>ㅤ</p>
+            <p>ㅤ</p>
+            <h3>NOVO LOGIN</h3>
+            <button class="button">CRIAR CONTA</button>
+            <div class="social-icons">
+                <img src="./images/gmail.png" alt="Gmail">
+                <img src="./images/whats.png" alt="WhatsApp">
+                <img src="./images/telegras.png" alt="Telegram">
             </div>
-            <div class="right">
-                <h2>FAÇA LOGIN</h2>
-                <form>
-                    <label for="username">USUÁRIO</label>
-                    <input type="text" id="username" name="username">
-                    <label for="password">SENHA</label>
-                    <input type="password" id="password" name="password">
-                    <div class="remember-me">
-                        <input type="checkbox" id="remember">
-                        <label for="remember">LEMBRAR DE MIM</label>
-                    </div>
-                    <button type="submit">ENTRAR</button>
-                </form>
-                <div class="social-icons">
-                    <img src="./images/face.png" alt="Facebook">
-                    <img src="./images/tiktok.png" alt="TikTok">
-                    <img src="./images/insta.png" alt="Instagram">
-                    <img src="./images/twitters.png" alt="Twitter">
-                </div>
+        </div>
+        <div class="right">
+            <h2>FAÇA LOGIN</h2>
+            <div class="input-group">
+                <label for="usuario">USUÁRIO</label>
+                <input type="text" id="usuario" name="usuario"> 
+            </div>
+            <div class="input-group">
+                <label for="senha">SENHA</label>
+                <input type="password" id="senha" name="senha">
+            </div>
+            <div class="input-group">
+                <input type="checkbox" id="lembrar" name="lembrar">
+                <label for="lembrar">LEMBRAR DE MIM</label>
+            </div>
+            <button class="button">ENTRAR</button>
+            <div class="social-icons">
+                <img src="./images/face.png" alt="Facebook">
+                <img src="./images/tiktok.png" alt="TikTok">
+                <img src="./images/insta.png" alt="Instagram">
+                <img src="./images/twitters.png" alt="Twitter">
             </div>
         </div>
     </div>
