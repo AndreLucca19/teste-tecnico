@@ -7,17 +7,38 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="login-container">
-        <h2>Bem Vindo</h2>
-        <input type="text" placeholder="Usuário">
-        <input type="password" placeholder="Senha">
-        <button>Logar</button>
-        <p>ou</p>
-        <button>Criar Conta</button>
-        <div class="social-login">
-            <img src="" alt="Facebook">
-            <img src="./images/twitter.png" alt="Twitter">
-            <img src="./images/instagram.png" alt="instagram">
+    <div class="container">
+        <div class="login-box">
+            <div class="left">
+                <h2>BEM VINDO</h2>
+                <h3>NOVO LOGIN</h3>
+                <button class="create-account">CRIAR CONTA</button>
+                <div class="social-icons">
+                    <img src="./images/gmail.png" alt="Gmail">
+                    <img src="./images/whats.png" alt="WhatsApp">
+                    <img src="./images/telegras.png" alt="Telegram">
+                </div>
+            </div>
+            <div class="right">
+                <h2>FAÇA LOGIN</h2>
+                <form>
+                    <label for="username">USUÁRIO</label>
+                    <input type="text" id="username" name="username">
+                    <label for="password">SENHA</label>
+                    <input type="password" id="password" name="password">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">LEMBRAR DE MIM</label>
+                    </div>
+                    <button type="submit">ENTRAR</button>
+                </form>
+                <div class="social-icons">
+                    <img src="./images/face.png" alt="Facebook">
+                    <img src="./images/tiktok.png" alt="TikTok">
+                    <img src="./images/insta.png" alt="Instagram">
+                    <img src="./images/twitters.png" alt="Twitter">
+                </div>
+            </div>
         </div>
     </div>
 </body>
