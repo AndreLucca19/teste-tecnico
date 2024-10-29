@@ -26,8 +26,8 @@ body {
     width: 350px;
     height: 350px;
     background: rgb(255, 230, 0);
-    top: 430px;
-    left: 390px;
+    top: 435px;
+    left: 450px;
 }
 
 .circle2 {
@@ -35,7 +35,7 @@ body {
     height: 400px;
     background: rgb(255, 0, 140);
     bottom: 250px;
-    right: 250px;
+    right: 370px;
 }
 
 .circle3 {
@@ -43,7 +43,7 @@ body {
     height: 250px;
     background: rgb(119, 0, 255);
     top: 160px;
-    left: 54%;
+    left: 52%;
     transform: translateX(-50%);
 }
 
@@ -122,4 +122,18 @@ h2, h3 {
 .social-icons img {
     width: 30px;
     height: 30px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+    .left {
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: none;
+    }
+
+    .right {
+        padding-top: 20px;
+    }
 }
