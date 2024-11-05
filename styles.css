@@ -25,58 +25,67 @@ body {
 .circle1 {
     width: 350px;
     height: 350px;
-    background: rgb(255, 230, 0);
-    top: 435px;
-    left: 450px;
+    background: linear-gradient(to right, hsl(19, 100%, 50%), hsl(54, 100%, 50%));
+    top: 495px;
+    left: 280px;
 }
 
 .circle2 {
     width: 400px;
     height: 400px;
-    background: rgb(255, 0, 140);
+    background: linear-gradient(to right, hsl(0, 100%, 50%), hsl(310, 100%, 50%));
     bottom: 250px;
-    right: 370px;
+    right: 300px;
 }
 
 .circle3 {
-    width: 250px;
-    height: 250px;
-    background: rgb(119, 0, 255);
+    width: 235px;
+    height: 235px;
+    background: linear-gradient(to right, hsl(270, 100%, 50%), hsl(295, 100%, 50%));
+
     top: 160px;
-    left: 52%;
+    left: 44%;
     transform: translateX(-50%);
+    
 }
 
 .circle4 {
     width: 150px;
     height: 150px;
-    background: rgba(0, 225, 255, 0.9);
-    top: 58%;
-    left: 890px;
+    background: linear-gradient(to right, hsl(172, 100%, 50%), hsl(219, 100%, 50%));
+    top: 62.4%;
+    left: 870px;
 }
 
 .container {
     display: flex;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(2, 2, 2, 0.041);
     backdrop-filter: blur(10px);
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.479);
     overflow: hidden;
     z-index: 1;
 }
 
 .left, .right {
     padding: 20px;
-    width: 300px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
 }
 
 .left {
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.986);
+    width: 250px;
 }
 
 h2, h3 {
     margin-bottom: 20px;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
 }
 
 .button {
@@ -93,7 +102,7 @@ h2, h3 {
 }
 
 .button:hover {
-    background: #555;
+    background: #ffffff;
 }
 
 .input-group {
